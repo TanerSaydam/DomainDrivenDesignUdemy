@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesignUdemy.Domain", "DomainDrivenDesignUdemy.Domain\DomainDrivenDesignUdemy.Domain.csproj", "{847A8E44-B0BC-48A3-BD80-34A3DC277E46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesignUdemy.ConsoleApp", "DomainDrivenDesignUdemy.ConsoleApp\DomainDrivenDesignUdemy.ConsoleApp.csproj", "{B2C99D92-CA23-435A-BCBA-5197BF3D8051}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{847A8E44-B0BC-48A3-BD80-34A3DC277E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{847A8E44-B0BC-48A3-BD80-34A3DC277E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{847A8E44-B0BC-48A3-BD80-34A3DC277E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C99D92-CA23-435A-BCBA-5197BF3D8051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C99D92-CA23-435A-BCBA-5197BF3D8051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C99D92-CA23-435A-BCBA-5197BF3D8051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C99D92-CA23-435A-BCBA-5197BF3D8051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
