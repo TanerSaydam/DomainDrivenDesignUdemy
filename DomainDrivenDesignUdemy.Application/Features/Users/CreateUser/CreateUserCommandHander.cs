@@ -1,5 +1,6 @@
 ﻿using DomainDrivenDesignUdemy.Domain.Abstractions;
 using DomainDrivenDesignUdemy.Domain.Users;
+using DomainDrivenDesignUdemy.Domain.Users.Events;
 using MediatR;
 
 namespace DomainDrivenDesignUdemy.Application.Features.Users.CreateUser;
@@ -8,17 +9,19 @@ internal sealed class CreateUserCommandHander : IRequestHandler<CreateUserComman
 {
     private readonly IUserRepository _userRepository;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IMediator _mediator;
 
-    public CreateUserCommandHander(IUserRepository userRepository, IUnitOfWork unitOfWork)
+    public CreateUserCommandHander(IUserRepository userRepository, IUnitOfWork unitOfWork, IMediator mediator)
     {
         _userRepository = userRepository;
         _unitOfWork = unitOfWork;
+        _mediator = mediator;
     }
 
     public async Task Handle(CreateUserCommand request, CancellationToken cancellationToken)
     {
         //iş kuralları
-        await _userRepository.CreateAsync(
+        var user = await _userRepository.CreateAsync(
             request.Name, 
             request.Email, 
             request.Password, 
@@ -30,5 +33,7 @@ internal sealed class CreateUserCommandHander : IRequestHandler<CreateUserComman
             cancellationToken);
 
         await _unitOfWork.SaveChangesAsync(cancellationToken);
+
+        await _mediator.Publish(new UserDomainEvent(user));
     }
 }
