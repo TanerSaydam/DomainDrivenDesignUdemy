@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesignUdemy.App
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesignUdemy.Infrastructure", "DomainDrivenDesignUdemy.Infrastructure\DomainDrivenDesignUdemy.Infrastructure.csproj", "{2D43A90C-64B6-4DC4-9540-D9D584A25A99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesignUdemy.WebApi", "DomainDrivenDesignUdemy.WebApi\DomainDrivenDesignUdemy.WebApi.csproj", "{602A42CF-99C0-40A4-9899-D75D91EAF358}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2D43A90C-64B6-4DC4-9540-D9D584A25A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D43A90C-64B6-4DC4-9540-D9D584A25A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D43A90C-64B6-4DC4-9540-D9D584A25A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602A42CF-99C0-40A4-9899-D75D91EAF358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602A42CF-99C0-40A4-9899-D75D91EAF358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602A42CF-99C0-40A4-9899-D75D91EAF358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602A42CF-99C0-40A4-9899-D75D91EAF358}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

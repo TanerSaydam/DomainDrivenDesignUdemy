@@ -4,6 +4,10 @@ using DomainDrivenDesignUdemy.Domain.Shared;
 namespace DomainDrivenDesignUdemy.Domain.Users;
 public sealed class User : Entity
 {
+    private User(Guid id) : base(id)
+    {
+
+    }
     private User(Guid id, Name name, Email email, Password password, Address address) : base(id)
     {
         Name = name;
