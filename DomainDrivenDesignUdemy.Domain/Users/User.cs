@@ -23,6 +23,7 @@ public sealed class User : Entity
 
     public static User CreateUser(string name, string email, string password, string country, string city, string street, string postalCode, string fullAddress)
     {
+        //İş Kuralları
         User user = new(
             id: Guid.NewGuid(),
             name: new(name),

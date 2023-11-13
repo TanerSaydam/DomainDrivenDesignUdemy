@@ -10,12 +10,10 @@ public sealed record Name
             throw new ArgumentException("İsim alanı boş olamaz!");
         }
 
-
         if (value.Length < 3)
         {
             throw new ArgumentException("İsim alanı 3 karakterden küçük olamaz!");
         }
-
 
         Value = value;
     }
