@@ -2,7 +2,7 @@
 
 public enum OrderStatusEnum
 {
-    AwaitinApproval = 1,
+    AwaitingApproval = 1,
     BeingPrepared = 2,
     InTransit = 3,
     Delivered = 4
